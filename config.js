@@ -23,7 +23,7 @@ const CONFIG = {
   stats: [
     { nombre: "15+",  label: "Années d'expérience" },
     { nombre: "300+", label: "Projets réalisés"     },
-    { nombre: "12",   label: "Langues maîtrisées"   },
+    { nombre: "3",   label: "Langues maîtrisées"   },
   ],
 
   /* ════════════════════════════════════════
@@ -34,11 +34,11 @@ const CONFIG = {
      ════════════════════════════════════════ */
   photos: {
     // Photo principale (colonne droite du hero)
-    principale: "",           // ex: "images/charles-Orion.jpg"
+    principale: "mic1.jpg",           // ex: "images/charles-Orion.jpg"
     altPrincipale: "Charles Orion — Comédien de doublage",
 
     // Photo de la section À propos
-    apropos: "",              // ex: "images/charles-studio.jpg"
+    apropos: "mic2.jpg",              // ex: "images/charles-studio.jpg"
     altApropos: "Charles Orion en studio d'enregistrement",
   },
 
@@ -131,7 +131,7 @@ const CONFIG = {
      📬 CONTACT
      ════════════════════════════════════════ */
   contact: {
-    email:       "contact@charlesOrion.fr",
+    email:       "contact@charlesorion.com",
     telephone:   "+33 (0)6 XX XX XX XX",
     localisation: "Paris, France — Disponible en remote et en présentiel",
     messageIntro: "Vous avez un projet ? Je serais ravi d'en discuter. N'hésitez pas à me contacter par email ou via les réseaux ci-dessous.",
