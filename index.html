@@ -1,1 +1,167 @@
-test
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chargement…</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Variables de typo (non modifiables via config, mais stables) -->
+  <style>
+    :root {
+      --font-titre: 'Cormorant Garamond', serif;
+      --font-corps: 'Jost', sans-serif;
+      /* Les couleurs sont injectées par main.js depuis config.js */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo" id="nav-logo"></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#demos">Démos audio</a></li>
+      <li id="nav-videos"><a href="#videos">Vidéos</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+       ══════════════════════════════════════ -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-text">
+      <p class="hero-eyebrow" id="hero-metier"></p>
+      <h1 class="hero-titre">
+        <span id="hero-prenom"></span><br>
+        <em id="hero-nom"></em>
+      </h1>
+      <p class="hero-sous-titre" id="hero-slogan"></p>
+      <p class="hero-description" id="hero-desc"></p>
+      <div>
+        <a href="#demos" class="btn-or">Écouter mes démos</a>
+        <a href="#contact" class="btn-contour">Me contacter</a>
+      </div>
+    </div>
+
+    <!-- Photo principale — injectée par main.js -->
+    <div class="hero-image-col" id="hero-image-col"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STATISTIQUES
+       ══════════════════════════════════════ -->
+  <div class="stats" id="stats-grille">
+    <!-- Injecté par main.js -->
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+       ══════════════════════════════════════ -->
+  <section id="services" style="padding: 6rem 0;">
+    <div class="services-en-tete reveal">
+      <p class="hero-eyebrow" style="justify-content:flex-start;">Ce que je propose</p>
+      <h2 class="section-titre">Mes <em>services</em></h2>
+      <div class="separateur"></div>
+      <p class="section-intro">
+        Du doublage cinématographique à la narration de documentaires, en passant par les publicités et les jeux vidéo — chaque projet reçoit toute mon attention et ma passion.
+      </p>
+    </div>
+    <div class="services-grille" id="services-grille">
+      <!-- Injecté par main.js -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DÉMOS AUDIO
+       ══════════════════════════════════════ -->
+  <section id="demos">
+    <div class="demos-inner">
+      <div class="reveal">
+        <p class="hero-eyebrow" style="justify-content:flex-start;">Extraits sonores</p>
+        <h2 class="section-titre">Mes <em>démos</em></h2>
+        <div class="separateur"></div>
+        <p class="section-intro">Écoutez quelques exemples de mon travail dans différents registres et univers.</p>
+      </div>
+      <div class="demo-liste" id="demo-liste">
+        <!-- Injecté par main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VIDÉOS (masqué automatiquement si vide)
+       ══════════════════════════════════════ -->
+  <section id="videos">
+    <div class="videos-inner">
+      <div class="reveal">
+        <p class="hero-eyebrow" style="justify-content:flex-start;">En images</p>
+        <h2 class="section-titre">Mes <em>vidéos</em></h2>
+        <div class="separateur"></div>
+        <p class="section-intro">Extraits vidéo et showreels pour découvrir mon travail à l'écran.</p>
+      </div>
+      <div class="video-liste" id="video-liste">
+        <!-- Injecté par main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       À PROPOS
+       ══════════════════════════════════════ -->
+  <section id="apropos" style="padding:0;">
+    <div class="apropos-texte reveal">
+      <p class="hero-eyebrow" style="justify-content:flex-start; color: var(--or);">Mon histoire</p>
+      <h2 class="section-titre">À <em>propos</em></h2>
+      <div class="separateur"></div>
+      <p class="section-intro" id="apropos-bio1"></p>
+      <p class="section-intro" style="margin-top: 1.2rem; color: rgba(255,255,255,0.5);" id="apropos-bio2"></p>
+      <div class="apropos-qualites" id="apropos-qualites">
+        <!-- Injecté par main.js -->
+      </div>
+    </div>
+    <!-- Photo à propos — injectée par main.js -->
+    <div class="apropos-image" id="apropos-image"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+       ══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="hero-eyebrow" style="justify-content:center;">Travaillons ensemble</p>
+      <h2 class="section-titre">Me <em>contacter</em></h2>
+      <div class="separateur" style="margin: 1.5rem auto 2.5rem;"></div>
+      <p class="section-intro" id="contact-intro" style="margin: 0 auto 1rem; text-align:center;"></p>
+      <a class="contact-email" id="contact-email-lien"></a>
+      <p class="contact-infos" id="contact-infos"></p>
+      <div class="reseaux" id="reseaux">
+        <!-- Injecté par main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer>
+    <p id="footer-copy"></p>
+  </footer>
+
+  <!-- Scripts — config doit être chargé avant main -->
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
