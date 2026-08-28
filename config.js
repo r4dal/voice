@@ -110,6 +110,11 @@ const CONFIG = {
       nom:   "Publicité & corporate",
       desc:  "Spots radio et TV, présentations d'entreprise, messages téléphoniques. Un ton professionnel et mémorable.",
     },
+    {
+      icone: "🔥",
+      nom:   "Bonne deconnade et bonne humeur",
+      desc:  "j'avoue je deconne bien hehe.",
+    },
   ],
 
   /* ════════════════════════════════════════
