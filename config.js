@@ -49,24 +49,9 @@ const CONFIG = {
      ════════════════════════════════════════ */
   demos: [
     {
-      titre: "Démo doublage — Drame",
+      titre: "Démo a la con",
       type:  "Cinéma & Téléfilm",
-      src:   "audio/demo-drame.mp3",   // chemin vers votre fichier audio
-    },
-    {
-      titre: "Démo publicité — Ton chaleureux",
-      type:  "Publicité & Corporate",
-      src:   "audio/demo-pub.mp3",
-    },
-    {
-      titre: "Démo narration — Documentaire nature",
-      type:  "Narration & Audiobook",
-      src:   "audio/demo-narration.mp3",
-    },
-    {
-      titre: "Démo jeu vidéo — Personnage héroïque",
-      type:  "Jeux vidéo",
-      src:   "audio/demo-jeu.mp3",
+      src:   "filemp3.mp3",   // chemin vers votre fichier audio
     },
   ],
 
@@ -76,13 +61,12 @@ const CONFIG = {
      la section vidéo entièrement.
      ════════════════════════════════════════ */
   videos: [
-    // Exemple — décommentez et adaptez :
-    // {
-    //   titre: "Bande démo — Doublage 2024",
-    //   type:  "Showreel",
-    //   src:   "videos/showreel-2024.mp4",
-    //   poster: "videos/showreel-poster.jpg",  // image affichée avant lecture (optionnel)
-    // },
+    {
+      titre: "Bande video a la con",
+      type:  "Showreel",
+      src:   "mp4file.mp4",
+      poster: "mic1.jpg",  // image affichée avant lecture (optionnel)
+    },
   ],
 
   /* ════════════════════════════════════════
